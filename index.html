@@ -11,8 +11,8 @@
 
 	</head>
 	<body>
-		<header>
-			<img src="./images/logo-dark.svg" alt="">
+		<header class="navbar">
+			<img src="./images/logo-dark.svg" alt="Logo" class="logo">
 
 			<nav>
 				<ul class="nav-links">
@@ -49,23 +49,33 @@
 			</button>
 		</header>
 		<main>
-			<section>
-				<h1>
-					Next generation digital banking
-				</h1>
-				<p>
-					Take your financial life online. Your Digitalbank account will be a one-stop-shop 
-					for spending, saving, budgeting, investing, and much more.
-				</p>
-				<button>
-					Request Invite
-				</button>
-
-				<img src="./images/bg-intro-desktop.svg" alt="">
-				<img src="./images/image-mockups.png" alt="">
+			<section class="hero">
+				<section class="hero__section hero__section--content">
+					
+						<h1 class="hero__title">
+							Next generation digital banking
+						</h1>
+						<p class="hero__paragraph">
+							Take your financial life online. Your Digitalbank account will be a one-stop-shop 
+							for spending, saving, budgeting, investing, and much more.
+						</p>
+						<button class="hero__button request-button">
+							Request Invite
+						</button>
+					
+					
+				</section>
+					<img src="./images/bg-intro-desktop.svg" alt="" class="hero__image intro">
+					<img src="./images/image-mockups.png" alt="" class="hero__image mockups">
+				<!--
+				<section class="hero__section">
+					<img src="./images/bg-intro-desktop.svg" alt="" class="hero__image intro">
+					<img src="./images/image-mockups.png" alt="" class="hero__image mockups">
+				</section>
+			-->
 			</section>
 
-			<section>
+			<section class="reasons">
 				<h2>
 					Why choose Digitalbank?
 				</h2>
@@ -111,7 +121,7 @@
 				</section>
 			</section>
 
-			<section>
+			<section class="articles">
 				<h2>
 					Latest Articles
 				</h2>
