@@ -12,10 +12,10 @@
 	</head>
 	<body>
 		<header class="navbar">
-			<img src="./images/logo-dark.svg" alt="Logo" class="logo">
+			<img src="./images/logo-dark.svg" alt="Logo" class="navbar__logo">
 
-			<nav>
-				<ul class="nav-links">
+			<nav class="navbar__links">
+				<ul>
 					<li>
 						<a href="">
 							Home
@@ -44,12 +44,29 @@
 				</ul>
 			</nav>
 			
-			<button class="request-button">
+			<button class="navbar__button request-button">
 				Request Invite
 			</button>
+
+			<button class="navbar__burger-icon">
+				<a href="">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" >
+						<g fill="hsl(233, 8%, 62%)" fill-rule="evenodd">
+							<path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z"/>
+						</g>
+					</svg>
+				</a>
+			</button>
 		</header>
+
+
 		<main>
 			<section class="hero">
+				<section class="hero__section hero__section--images">
+					<img src="./images/bg-intro-desktop.svg" alt="" class="hero__image intro">
+					<img src="./images/bg-intro-mobile.svg" alt="" class="hero__image intro-mobile">
+					<img src="./images/image-mockups.png" alt="" class="hero__image mockups">
+				</section>
 				<section class="hero__section hero__section--content">
 					
 						<h1 class="hero__title">
@@ -65,8 +82,9 @@
 					
 					
 				</section>
-					<img src="./images/bg-intro-desktop.svg" alt="" class="hero__image intro">
-					<img src="./images/image-mockups.png" alt="" class="hero__image mockups">
+				
+				
+				
 				<!--
 				<section class="hero__section">
 					<img src="./images/bg-intro-desktop.svg" alt="" class="hero__image intro">
@@ -182,7 +200,7 @@
 				</section>
 			</section>
 		</main>
-		<footer>
+		<footer class="footer">
 			<img src="./images/logo-light.svg" alt="">
 
 			<ul>
@@ -246,7 +264,7 @@
 				</li>
 			</ul>
 			
-			<button>
+			<button class="request-button">
 				Request Invite
 			</button>
 			
