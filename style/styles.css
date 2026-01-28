@@ -105,14 +105,14 @@
 }
 
 .request-button {
-    background-color: hsl(136, 64%, 51%);
+    background: linear-gradient(to top right, hsl(192, 69%, 51%), hsl(136, 64%, 51%));
     color: white;
     width: 150px;
     
     border-radius: 30px;
     font-weight: 700;
     border: none;
-    font-size: 0.8em;
+    font-size: 0.75em;
     padding: 15px;
 }
 
@@ -263,8 +263,47 @@
 .footer {
     position: relative;
     background-color: hsl(233, 26%, 24%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 65vh;
+    padding: 25px;
+    width: 100%;
 }
 
+.footer__logo {
+    max-width: 50%;
+    width: 100%;
+}
+
+.footer__links {
+    max-width: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: hsl(220, 16%, 96%);
+    font-size: 0.7em;
+    
+}
+
+.footer__paragraph {
+    color: hsl(233, 8%, 62%);
+    font-size: 0.7em;
+}
 
 
 /*
