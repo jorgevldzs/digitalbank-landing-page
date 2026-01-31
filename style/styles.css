@@ -6,31 +6,20 @@
     box-sizing: border-box;
     font-family: "Public Sans", sans-serif;
     font-size: 18px;
-
-
-    /*outline: 1px solid red;*/
 }
 
 main {
     overflow-x: hidden;
 }
 
-
-
 .navbar {
     width: 100%;
     height: 10vh;
-    
-    
     background-color: hsl(0, 100%, 100%);
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-
     padding: 30px;
-    
-
     position: relative;
     z-index: 5;
 }
@@ -48,14 +37,12 @@ main {
     background-color: hsl(0, 100%, 100%);
 }
 
-
 .hero {
     background-color: hsl(0, 0%, 98%);
     height: 90vh;
     display: flex;
     flex-direction: column;
     position: relative;
-
 }
 
 .hero__image.intro {
@@ -79,14 +66,12 @@ main {
 .hero__image.mockups {
     width: 88%;
     top: -120px;
-
 }
 
 .hero__section--images {
     display: flex;
     justify-content: center;
     height: 40vh;
-
 }
 
 .hero__section--content {
@@ -115,7 +100,6 @@ main {
     background: linear-gradient(to top right, hsl(192, 69%, 51%), hsl(136, 64%, 51%));
     color: white;
     width: 150px;
-    
     border-radius: 30px;
     font-weight: 700;
     border: none;
@@ -127,14 +111,10 @@ main {
     position: relative;
     background-color: hsl(220, 16%, 96%);
     padding: 30px;
-    height: 155vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.reasons__section {
-
 }
 
 .reasons__title {
@@ -162,10 +142,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-
-
     height: 25vh;
-
 }
 
 .reasons__section-block2 {
@@ -173,7 +150,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 130vh;
+    height: 135vh;
 }
 
 .reasons__section-reasondiv {
@@ -193,13 +170,12 @@ main {
     position: relative;
     background-color: hsl(0, 0%, 98%);
     max-width: 100%;
-    padding: 30px;
+    padding: 60px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 245vh;
+    height: 195vh;
     gap: 30px;
-
 }
 
 .articles img {
@@ -218,7 +194,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 220vh;
+    height: 180vh;
 }
 
 .articles__card {
@@ -263,17 +239,34 @@ main {
     text-align: justify;
 }
 
-
 .footer {
     position: relative;
     background-color: hsl(233, 26%, 24%);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 65vh;
-    padding: 25px;
+    padding: 50px 25px;
     width: 100%;
+    gap: 30px;
+}
+
+.footer__section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+}
+
+.footer__section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85px;
 }
 
 .footer__logo {
@@ -308,10 +301,6 @@ main {
     color: hsl(233, 8%, 62%);
     font-size: 0.7em;
 }
-
-
-
-
 
 @media (min-width: 1440px) {
     .navbar {
@@ -349,8 +338,6 @@ main {
     .request-button {
         font-size: 0.80em;
     }
-
-
 
     .hero {
         flex-direction: row-reverse;
@@ -414,16 +401,11 @@ main {
     .reasons {
         z-index: 2;
         position: relative;
-        background-color: hsl(220, 16%, 96%);
         padding: 100px 135px;
         height: 75vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    .reasons__section {
-
     }
 
     .reasons__title {
@@ -455,7 +437,6 @@ main {
         width: 60%;
         gap: 25px;
         height: auto;
-
     }
 
     .reasons__section-block2 {
@@ -481,11 +462,138 @@ main {
         margin: 0;
     }
 
+    .articles {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 75vh;
+        gap: 50px;
+        padding: 100px 135px;
+    }
+
+    .articles__title {
+        font-weight: 300;
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .articles__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .articles__card {
+        max-width: 20%;
+        width: 100%;
+        max-height: 450px;
+    }
+
+    .articles__card-img {
+        height: 50%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .articles__card-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
 
+    .articles__card-writter {
+        font-size: 0.5em;
+        text-align: left;
+    }
 
+    .articles__card-title {
+        font-weight: 300;
+        font-size: 0.8em;
+        text-align: left;
+    }
 
+    .articles__card-paragraph {
+        font-size: 0.7em;
+        text-align: left;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; 
+                line-clamp: 4; 
+        -webkit-box-orient: vertical;
+    }
 
+    .footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 135px;
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
 
+    .footer__logo {
+        max-width: 180px;
+        width: 100%;
+    }
+
+    .footer__section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        height: 100%;
+        width: auto;
+    }
+
+    .footer__links {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        height: 120px;
+        gap: 30px;
+    }
+
+    .footer__nav a {
+        text-decoration: none;
+        color: hsl(220, 16%, 96%);
+        font-size: 0.75em;
+        text-align: left;
+        width: 180px;
+        
+    }
+
+    .footer__section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 25px;
+        height: 100%;
+        width: auto;
+    }
+
+    .footer__section2 button {
+        align-items: flex-end;
+    }
+
+    .footer__paragraph {
+        color: hsl(233, 8%, 62%);
+        font-size: 0.8em;
+        text-align: right;
+    }
 }
 
